@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f47b25;
+  --color-background-light: #f8f7f5;
+  --color-background-dark: #221710;
+  --font-display: "Newsreader", serif;
+  --font-sans: "Noto Sans", sans-serif;
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(34, 23, 16, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(244, 123, 37, 0.2);
+  }
+  .glass-card {
+    background: rgba(244, 123, 37, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(244, 123, 37, 0.1);
+  }
+  .glass-nav {
+    background: rgba(34, 23, 16, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
